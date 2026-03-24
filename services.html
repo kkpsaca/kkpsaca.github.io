@@ -1,340 +1,456 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Our Services - P Sreenivasulu and Associates</title>
-    <meta name="description" content="Comprehensive chartered accountant services including tax planning, audit, accounting, business consulting, company registration, and financial advisory in Bangalore.">
-    <meta name="keywords" content="tax planning, audit services, accounting, business consulting, company registration, financial advisory, Bangalore CA">
-
-    <!-- Favicon -->
-    <link rel="icon" type="image/svg+xml" href="favicon.svg">
-    <link rel="icon" type="image/png" sizes="48x48" href="favicon-48.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-    <link rel="shortcut icon" type="image/jpeg" href="favicon.jpeg">
-    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-    <meta name="msapplication-TileImage" content="favicon-256.png">
-
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Services — P Sreenivasulu and Associates, Chartered Accountants</title>
+  <meta name="description" content="Comprehensive chartered accountancy services: Audit & Assurance, Taxation, Corporate Secretarial, Business Consultancy, Investment Advisory, and Specialised Services.">
+  <link rel="icon" href="favicon.jpeg" type="image/jpeg">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <div class="container">
-            <div class="header-content">
-                <div class="logo">
-                    <img src="favicon.jpeg" alt="PSA Logo" class="logo-icon">
-                    <div class="logo-text">
-                        P Sreenivasulu and Associates
-                        <div class="logo-subtitle">Chartered Accountants</div>
-                    </div>
-                </div>
-                <nav>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="services.html" class="active">Services</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                        <li><a href="careers.html">Careers</a></li>
-                    </ul>
-                    <button class="mobile-menu-toggle">☰</button>
-                </nav>
-            </div>
+
+  <!-- ── HEADER ─────────────────────────────────────────── -->
+  <header class="site-header" id="siteHeader">
+    <div class="header-inner">
+      <a href="index.html" class="site-logo">
+        <div class="logo-badge"><img src="favicon.jpeg" alt="PS&A Logo"></div>
+        <div class="logo-text">
+          <span class="logo-name">PS &amp; Associates</span>
+          <span class="logo-sub">Chartered Accountants</span>
         </div>
-    </header>
+      </a>
+      <nav class="site-nav" aria-label="Primary">
+        <ul class="nav-links">
+          <li><a href="index.html"    class="nav-link">Home</a></li>
+          <li><a href="about.html"    class="nav-link">About</a></li>
+          <li><a href="services.html" class="nav-link active">Services</a></li>
+          <li><a href="careers.html"  class="nav-link">Careers</a></li>
+          <li><a href="contact.html"  class="nav-link">Contact</a></li>
+        </ul>
+        <a href="contact.html" class="nav-cta">Get in Touch</a>
+      </nav>
+      <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+  <div class="mobile-nav-overlay" id="navOverlay"></div>
+  <nav class="mobile-nav" id="mobileNav" aria-label="Mobile">
+    <a href="index.html"    class="mobile-nav-link">Home</a>
+    <a href="about.html"    class="mobile-nav-link">About</a>
+    <a href="services.html" class="mobile-nav-link active">Services</a>
+    <a href="careers.html"  class="mobile-nav-link">Careers</a>
+    <a href="contact.html"  class="mobile-nav-link">Contact</a>
+    <a href="contact.html"  class="mobile-nav-cta">Get in Touch</a>
+  </nav>
 
-    <main>
-        <div class="container">
-            <section class="section">
-                <h2>Our Professional Services</h2>
-                <p>We offer a comprehensive range of chartered accountant services designed to meet all your financial and business needs. Our experienced team provides expert guidance and solutions tailored to your specific requirements across diverse industry sectors.</p>
-            </section>
+  <!-- ── PAGE BANNER ───────────────────────────────────── -->
+  <section class="page-banner">
+    <div class="container">
+      <nav class="banner-breadcrumb" aria-label="Breadcrumb">
+        <a href="index.html">Home</a>
+        <span>/</span>
+        <span style="color:rgba(250,248,242,0.7);">Services</span>
+      </nav>
+      <h1>Our <em>Services</em></h1>
+      <p class="banner-sub">Comprehensive financial, legal, and advisory solutions — delivered with precision and professional integrity.</p>
+    </div>
+  </section>
 
-            <section class="section service-section" id="audit-assurance">
-                <div class="service-header">
-                    <div class="service-image">
-                        <img src="old-images/office-1.jpeg" alt="Audit & Assurance Services" loading="lazy">
-                    </div>
-                    <div class="service-info">
-                        <h3>1. Audit & Assurance</h3>
-                        <p>Comprehensive audit and assurance services ensuring transparency, compliance, and stakeholder confidence across all business operations.</p>
-                    </div>
-                </div>
+  <!-- ── MAIN CONTENT ───────────────────────────────────── -->
+  <main class="section" style="background:var(--cream);">
+    <div class="container">
 
-                <div class="services-grid">
-                    <div class="service-card">
-                        <h4>Statutory & Compliance Audits</h4>
-                        <ul>
-                            <li>Statutory Audits of Companies, LLPs, Firms, Trusts & Societies</li>
-                            <li>Tax Audits & GST Audits</li>
-                            <li>Special Audits under RBI, C&AG, and Regulatory Authorities</li>
-                        </ul>
-                    </div>
-                    <div class="service-card">
-                        <h4>Specialized Audits</h4>
-                        <ul>
-                            <li>Internal & Management Audits</li>
-                            <li>Concurrent, Revenue & Stock Audits of Banks & Corporates</li>
-                            <li>System & Information Systems (IS) Audits</li>
-                        </ul>
-                    </div>
-                    <div class="service-card">
-                        <h4>Investigation & Forensic</h4>
-                        <ul>
-                            <li>Forensic Audits & Fraud Detection</li>
-                            <li>Due Diligence Services</li>
-                            <li>Risk Assessment & Management</li>
-                        </ul>
-                    </div>
-                </div>
-            </section>
-
-            <section class="section service-section reverse" id="taxation-services">
-                <div class="service-header">
-                    <div class="service-image">
-                        <img src="old-images/office-2.jpeg" alt="Taxation Services" loading="lazy">
-                    </div>
-                    <div class="service-info">
-                        <h3>2. Taxation Services</h3>
-                        <p>Complete direct and indirect taxation solutions covering compliance, advisory, and representation services.</p>
-                    </div>
-                </div>
-
-                <div class="services-grid">
-                    <div class="service-card">
-                        <h4>Direct Taxation</h4>
-                        <ul>
-                            <li>Income Tax Advisory & Compliance</li>
-                            <li>Filing of Returns for Corporates, Firms & Individuals</li>
-                            <li>Tax Planning & Structuring</li>
-                            <li>Representation before Income Tax Authorities (Assessment & Appeals)</li>
-                            <li>TDS Compliance & Advisory</li>
-                        </ul>
-                    </div>
-                    <div class="service-card">
-                        <h4>Indirect Taxation</h4>
-                        <ul>
-                            <li>GST Registration, Compliance & Filing</li>
-                            <li>GST Audit & Advisory</li>
-                            <li>Representation before GST Authorities</li>
-                            <li>Advisory on Input Tax Credit, Refunds & Transitional Provisions</li>
-                        </ul>
-                    </div>
-                </div>
-            </section>
-
-            <section class="section service-section" id="corporate-secretarial">
-                <div class="service-header">
-                    <div class="service-image">
-                        <img src="old-images/office-3.jpeg" alt="Corporate & Secretarial Services" loading="lazy">
-                    </div>
-                    <div class="service-info">
-                        <h3>3. Corporate & Secretarial Services</h3>
-                        <p>End-to-end corporate compliance and secretarial services ensuring regulatory adherence and smooth business operations.</p>
-                    </div>
-                </div>
-
-                <div class="services-grid">
-                    <div class="service-card">
-                        <h4>Business Formation</h4>
-                        <ul>
-                            <li>Incorporation of Companies, LLPs & Partnerships</li>
-                            <li>Corporate Law & ROC Compliance</li>
-                            <li>Maintenance of Statutory Records & Filings</li>
-                        </ul>
-                    </div>
-                    <div class="service-card">
-                        <h4>Corporate Restructuring</h4>
-                        <ul>
-                            <li>Advisory on Mergers, Restructuring & Conversions</li>
-                            <li>Secretarial Compliance for Private & Public Companies</li>
-                            <li>Corporate Governance Advisory</li>
-                        </ul>
-                    </div>
-                    <div class="service-card">
-                        <h4>Non-Profit Organizations</h4>
-                        <ul>
-                            <li>Trusts, Societies & NGO Compliance</li>
-                            <li>Regulatory Filings & Approvals</li>
-                            <li>Statutory Record Maintenance</li>
-                        </ul>
-                    </div>
-                </div>
-            </section>
-
-            <section class="section service-section reverse" id="business-consultancy">
-                <div class="service-header">
-                    <div class="service-image">
-                        <img src="old-images/team-1.jpeg" alt="Business & Management Consultancy" loading="lazy">
-                    </div>
-                    <div class="service-info">
-                        <h3>4. Business & Management Consultancy</h3>
-                        <p>Strategic business advisory services helping organizations optimize operations, manage risks, and achieve sustainable growth.</p>
-                    </div>
-                </div>
-
-                <div class="services-grid">
-                    <div class="service-card">
-                        <h4>Business Strategy</h4>
-                        <ul>
-                            <li>Business Setup & Structuring Advisory</li>
-                            <li>Preparation of Business Plans & Financial Projections</li>
-                            <li>Strategic Planning & Market Analysis</li>
-                        </ul>
-                    </div>
-                    <div class="service-card">
-                        <h4>Technology & Systems</h4>
-                        <ul>
-                            <li>System Design, ERP Consulting & Process Automation</li>
-                            <li>Internal Controls & Risk Management</li>
-                            <li>Digital Transformation Advisory</li>
-                        </ul>
-                    </div>
-                    <div class="service-card">
-                        <h4>Governance & Compliance</h4>
-                        <ul>
-                            <li>Advisory on Corporate Governance & Compliance Frameworks</li>
-                            <li>Risk Assessment & Mitigation Strategies</li>
-                            <li>Performance Management Systems</li>
-                        </ul>
-                    </div>
-                </div>
-            </section>
-
-            <section class="section service-section" id="investment-advisory">
-                <div class="service-header">
-                    <div class="service-image">
-                        <img src="old-images/team-2.jpeg" alt="Investment & Financial Advisory" loading="lazy">
-                    </div>
-                    <div class="service-info">
-                        <h3>5. Investment & Financial Advisory</h3>
-                        <p>Comprehensive financial advisory services covering investments, valuations, and strategic financial planning for sustainable growth.</p>
-                    </div>
-                </div>
-
-                <div class="services-grid">
-                    <div class="service-card">
-                        <h4>Investment Services</h4>
-                        <ul>
-                            <li>Advisory on Investments & Wealth Management</li>
-                            <li>Portfolio Analysis & Optimization</li>
-                            <li>Risk Assessment & Management</li>
-                        </ul>
-                    </div>
-                    <div class="service-card">
-                        <h4>Valuation & Due Diligence</h4>
-                        <ul>
-                            <li>Business Valuation & Due Diligence</li>
-                            <li>Project Financing & Loan Syndication Support</li>
-                            <li>Financial Analysis & Feasibility Studies</li>
-                        </ul>
-                    </div>
-                    <div class="service-card">
-                        <h4>Strategic Financial Planning</h4>
-                        <ul>
-                            <li>Financial Restructuring & Strategic Planning</li>
-                            <li>Capital Structure Optimization</li>
-                            <li>Merger & Acquisition Advisory</li>
-                        </ul>
-                    </div>
-                </div>
-            </section>
-
-            <section class="section service-section reverse" id="specialized-services">
-                <div class="service-header">
-                    <div class="service-image">
-                        <img src="old-images/team-3.jpeg" alt="Specialized Services" loading="lazy">
-                    </div>
-                    <div class="service-info">
-                        <h3>6. Specialized Services</h3>
-                        <p>Specialized and sector-specific services leveraging our empanelments and expertise across diverse industries and regulatory frameworks.</p>
-                    </div>
-                </div>
-
-                <div class="services-grid">
-                    <div class="service-card">
-                        <h4>Empanelled Services</h4>
-                        <ul>
-                            <li>Empanelled Audits with RBI, C&AG & Co-operative Audit Departments</li>
-                            <li>Bank Audits & Financial Institution Reviews</li>
-                            <li>Government & Public Sector Audits</li>
-                        </ul>
-                    </div>
-                    <div class="service-card">
-                        <h4>Startup & NRI Services</h4>
-                        <ul>
-                            <li>Advisory for Startups & Emerging Businesses</li>
-                            <li>Assistance in Government Registrations & Approvals</li>
-                            <li>Advisory for Non-Resident Indians (NRI) on Tax & Investments</li>
-                        </ul>
-                    </div>
-                    <div class="service-card">
-                        <h4>Sector-Specific Advisory</h4>
-                        <ul>
-                            <li>Banking & Financial Services</li>
-                            <li>Manufacturing & IT/ITES</li>
-                            <li>Healthcare & Renewable Energy</li>
-                            <li>Transport & Retail Sectors</li>
-                        </ul>
-                    </div>
-                </div>
-            </section>
-
-            <section class="section">
-                <h2>Why Choose Our Services</h2>
-                <div class="highlight">
-                    <p>Our comprehensive service portfolio is designed to address all aspects of your financial and business needs. We combine technical expertise with practical experience to deliver solutions that drive results.</p>
-                    <div style="margin-top: 2rem;">
-                        <a href="contact.html" class="cta-button">Get Started Today</a>
-                        <a href="about.html" class="cta-button secondary">Learn About Our Team</a>
-                        <a href="https://wa.me/918088099478?text=Hi%2C%20I%27m%20interested%20in%20your%20services.%20Could%20you%20please%20provide%20more%20details%3F" target="_blank" rel="noopener noreferrer" class="cta-button" style="background: #25D366; border-color: #25D366;">💬 WhatsApp</a>
-                    </div>
-                </div>
-            </section>
+      <!-- 1. Audit & Assurance -->
+      <div class="service-section reveal" id="audit-assurance">
+        <div class="service-header-block">
+          <div class="service-header-img">
+            <img src="old-images/office-1.jpeg" alt="Audit and Assurance Services" loading="lazy">
+          </div>
+          <div class="service-header-text">
+            <span class="service-number">Service 01</span>
+            <hr class="gold-rule">
+            <h2>Audit &amp; Assurance</h2>
+            <p>Our audit practice is built on a foundation of technical rigour and independence. Whether it's a statutory requirement, an internal control review, or a specialised IS audit, we bring meticulous attention to every engagement. Our partners hold DISA and CISA qualifications, giving us a unique edge in information systems audit — a capability increasingly critical in today's digital business environment.</p>
+          </div>
         </div>
-    </main>
-
-    <footer>
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h3>P Sreenivasulu and Associates</h3>
-                    <p>Professional Chartered Accountant services in Bangalore. Your trusted financial partner for comprehensive accounting and business advisory solutions.</p>
-                </div>
-                <div class="footer-section">
-                    <h3>Quick Links</h3>
-                    <p><a href="index.html">Home</a></p>
-                    <p><a href="services.html">Services</a></p>
-                    <p><a href="about.html">About Us</a></p>
-                    <p><a href="contact.html">Contact</a></p>
-                    <p><a href="careers.html">Careers</a></p>
-                </div>
-                <div class="footer-section">
-                    <h3>Services</h3>
-                    <p><a href="services.html#tax-planning">Tax Planning</a></p>
-                    <p><a href="services.html#audit-assurance">Audit & Assurance</a></p>
-                    <p><a href="services.html#accounting-services">Accounting</a></p>
-                    <p><a href="services.html#business-consulting">Business Consulting</a></p>
-                </div>
-                <div class="footer-section">
-                    <h3>Contact Info</h3>
-                    <p>📍 Bangalore, Karnataka, India</p>
-                    <p>📞 +91-8088099478</p>
-                    <p>✉️ krishna@psaca.co</p>
-                    <p>🕒 Mon-Sat: 10:00 AM - 7:00 PM</p>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2024 P Sreenivasulu and Associates. All rights reserved.</p>
-            </div>
+        <div class="sub-service-grid reveal-stagger">
+          <div class="sub-service-card">
+            <h4>Statutory Audits</h4>
+            <ul>
+              <li>Company audit under Companies Act 2013</li>
+              <li>Bank branch statutory audits</li>
+              <li>Cooperative society audits</li>
+              <li>Trust and NGO audits</li>
+              <li>LLP statutory audits</li>
+            </ul>
+          </div>
+          <div class="sub-service-card">
+            <h4>Internal &amp; Concurrent Audits</h4>
+            <ul>
+              <li>Internal audit of companies and banks</li>
+              <li>Concurrent audit of bank branches</li>
+              <li>Revenue audit engagements</li>
+              <li>Stock audit and physical verification</li>
+              <li>Process and control reviews</li>
+            </ul>
+          </div>
+          <div class="sub-service-card">
+            <h4>IS &amp; Specialised Audits</h4>
+            <ul>
+              <li>Information Systems (IS) audits</li>
+              <li>ERP system audits and reviews</li>
+              <li>Forensic audits and investigations</li>
+              <li>C&amp;AG empanelled audit assignments</li>
+              <li>Due diligence audits</li>
+            </ul>
+          </div>
         </div>
-    </footer>
+      </div>
 
-    <script>
-        // Mobile menu toggle
-        document.querySelector('.mobile-menu-toggle').addEventListener('click', function() {
-            document.querySelector('nav ul').classList.toggle('active');
-        });
-    </script>
+      <!-- 2. Taxation Services -->
+      <div class="service-section reveal" id="taxation-services">
+        <div class="service-header-block reverse">
+          <div class="service-header-img">
+            <img src="old-images/office-2.jpeg" alt="Taxation Services" loading="lazy">
+          </div>
+          <div class="service-header-text">
+            <span class="service-number">Service 02</span>
+            <hr class="gold-rule">
+            <h2>Taxation Services</h2>
+            <p>Navigating India's complex tax landscape demands both expertise and vigilance. Our taxation practice covers the full spectrum — from individual income tax planning to corporate direct tax compliance, GST advisory, and representation before tax authorities. We combine legal knowledge with practical business understanding to minimise your tax burden within the bounds of law.</p>
+          </div>
+        </div>
+        <div class="sub-service-grid reveal-stagger">
+          <div class="sub-service-card">
+            <h4>Direct Taxation</h4>
+            <ul>
+              <li>Individual and HUF income tax filing</li>
+              <li>Corporate tax planning and compliance</li>
+              <li>TDS compliance and returns</li>
+              <li>Tax audit under Section 44AB</li>
+              <li>Representation before CIT(A) / ITAT</li>
+            </ul>
+          </div>
+          <div class="sub-service-card">
+            <h4>Indirect Taxation</h4>
+            <ul>
+              <li>GST registration and returns</li>
+              <li>GST audit and reconciliation</li>
+              <li>Input tax credit optimisation</li>
+              <li>GST notices and assessments</li>
+              <li>Customs and import duty advisory</li>
+            </ul>
+          </div>
+          <div class="sub-service-card">
+            <h4>Advisory &amp; Planning</h4>
+            <ul>
+              <li>Tax-efficient business structuring</li>
+              <li>Capital gains tax planning</li>
+              <li>International taxation and DTAA</li>
+              <li>Transfer pricing documentation</li>
+              <li>Tax health checks</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- 3. Corporate & Secretarial -->
+      <div class="service-section reveal" id="corporate-secretarial">
+        <div class="service-header-block">
+          <div class="service-header-img">
+            <img src="old-images/office-3.jpeg" alt="Corporate and Secretarial Services" loading="lazy">
+          </div>
+          <div class="service-header-text">
+            <span class="service-number">Service 03</span>
+            <hr class="gold-rule">
+            <h2>Corporate &amp; Secretarial</h2>
+            <p>Our firm's unique edge lies in the ACS qualification held by our Founder Partner — enabling us to offer integrated corporate law and secretarial services alongside traditional CA services. From incorporation to ongoing compliance, we handle all aspects of your corporate lifecycle, freeing you to focus on business growth.</p>
+          </div>
+        </div>
+        <div class="sub-service-grid reveal-stagger">
+          <div class="sub-service-card">
+            <h4>Company Formation</h4>
+            <ul>
+              <li>Private / Public company incorporation</li>
+              <li>LLP formation and registration</li>
+              <li>Section 8 (non-profit) company</li>
+              <li>OPC (One Person Company)</li>
+              <li>Partnership firm registration</li>
+            </ul>
+          </div>
+          <div class="sub-service-card">
+            <h4>Ongoing Compliance</h4>
+            <ul>
+              <li>Annual ROC filings (AOC-4, MGT-7)</li>
+              <li>Board meeting and AGM support</li>
+              <li>Maintenance of statutory registers</li>
+              <li>Director KYC and DIN compliance</li>
+              <li>Share transfer and allotment</li>
+            </ul>
+          </div>
+          <div class="sub-service-card">
+            <h4>Corporate Advisory</h4>
+            <ul>
+              <li>FEMA and RBI compliances</li>
+              <li>Mergers and amalgamations</li>
+              <li>Strike off / winding up advisory</li>
+              <li>Secretarial audit (Form MR-3)</li>
+              <li>Corporate restructuring advisory</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- 4. Business & Management Consultancy -->
+      <div class="service-section reveal" id="business-consultancy">
+        <div class="service-header-block reverse">
+          <div class="service-header-img">
+            <img src="old-images/team-1.jpeg" alt="Business and Management Consultancy" loading="lazy">
+          </div>
+          <div class="service-header-text">
+            <span class="service-number">Service 04</span>
+            <hr class="gold-rule">
+            <h2>Business &amp; Management Consultancy</h2>
+            <p>CA Krishna Kanth's rare combination of engineering (NIT-K) and chartered accountancy provides a distinct analytical advantage in our consultancy practice. We approach business problems with both quantitative rigour and financial intelligence — delivering ERP design, process improvement, and strategic advisory that genuinely moves the needle.</p>
+          </div>
+        </div>
+        <div class="sub-service-grid reveal-stagger">
+          <div class="sub-service-card">
+            <h4>Strategic Advisory</h4>
+            <ul>
+              <li>Business setup and feasibility studies</li>
+              <li>Project finance and CMA preparation</li>
+              <li>Business valuation</li>
+              <li>Cost audit and cost management</li>
+              <li>Performance benchmarking</li>
+            </ul>
+          </div>
+          <div class="sub-service-card">
+            <h4>ERP &amp; Systems</h4>
+            <ul>
+              <li>ERP design and implementation advisory</li>
+              <li>Accounting software setup</li>
+              <li>Internal control system design</li>
+              <li>SOP development and documentation</li>
+              <li>IT system security reviews</li>
+            </ul>
+          </div>
+          <div class="sub-service-card">
+            <h4>Forensic &amp; Investigation</h4>
+            <ul>
+              <li>Forensic accounting investigations</li>
+              <li>Fraud examination and reporting</li>
+              <li>Litigation support services</li>
+              <li>Cyber law advisory</li>
+              <li>Digital evidence analysis support</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- 5. Investment & Financial Advisory -->
+      <div class="service-section reveal" id="investment-advisory">
+        <div class="service-header-block">
+          <div class="service-header-img">
+            <img src="old-images/team-2.jpeg" alt="Investment and Financial Advisory" loading="lazy">
+          </div>
+          <div class="service-header-text">
+            <span class="service-number">Service 05</span>
+            <hr class="gold-rule">
+            <h2>Investment &amp; Financial Advisory</h2>
+            <p>Sound financial decisions are built on accurate information and professional guidance. We help individuals and businesses structure their finances, plan for growth, and make informed investment decisions. Our advice is always independent, objective, and tailored to your specific financial situation and goals.</p>
+          </div>
+        </div>
+        <div class="sub-service-grid reveal-stagger">
+          <div class="sub-service-card">
+            <h4>Personal Finance</h4>
+            <ul>
+              <li>Investment portfolio advisory</li>
+              <li>Retirement and wealth planning</li>
+              <li>Insurance adequacy review</li>
+              <li>Estate planning and succession</li>
+              <li>NRI financial planning</li>
+            </ul>
+          </div>
+          <div class="sub-service-card">
+            <h4>Business Finance</h4>
+            <ul>
+              <li>Bank loan documentation and liaison</li>
+              <li>Working capital management</li>
+              <li>Private equity and funding advisory</li>
+              <li>Cash flow modelling</li>
+              <li>Financial statement preparation</li>
+            </ul>
+          </div>
+          <div class="sub-service-card">
+            <h4>Regulatory Finance</h4>
+            <ul>
+              <li>FEMA / RBI regulatory advisory</li>
+              <li>Foreign investment compliance</li>
+              <li>ECB and ODI advisory</li>
+              <li>FCRA compliance</li>
+              <li>Financial due diligence</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- 6. Specialised Services -->
+      <div class="service-section reveal" id="specialized-services">
+        <div class="service-header-block reverse">
+          <div class="service-header-img">
+            <img src="old-images/team-3.jpeg" alt="Specialised Services" loading="lazy">
+          </div>
+          <div class="service-header-text">
+            <span class="service-number">Service 06</span>
+            <hr class="gold-rule">
+            <h2>Specialised Services</h2>
+            <p>Our firm holds prestigious empanelments with the Reserve Bank of India and the Comptroller &amp; Auditor General of India, reflecting the highest standards of professional competence. Additionally, our empanelment with the Karnataka State Cooperative Audit Department enables us to serve the cooperative sector with specialist expertise. These credentials set us apart in the Bengaluru CA landscape.</p>
+          </div>
+        </div>
+        <div class="sub-service-grid reveal-stagger">
+          <div class="sub-service-card">
+            <h4>RBI Empanelled Services</h4>
+            <ul>
+              <li>Bank branch statutory audits</li>
+              <li>Long form audit report (LFAR)</li>
+              <li>Concurrent audit of bank branches</li>
+              <li>Revenue audit of banks</li>
+              <li>IS audit of banking systems</li>
+            </ul>
+          </div>
+          <div class="sub-service-card">
+            <h4>C&amp;AG Empanelled Services</h4>
+            <ul>
+              <li>Audit of central government undertakings</li>
+              <li>Supplementary audit engagements</li>
+              <li>Grant-in-aid institutions audit</li>
+              <li>Compliance and regulatory audits</li>
+              <li>Autonomous bodies audit</li>
+            </ul>
+          </div>
+          <div class="sub-service-card">
+            <h4>Cooperative &amp; Cyber</h4>
+            <ul>
+              <li>Karnataka co-op society audits</li>
+              <li>Co-op bank and credit society audit</li>
+              <li>Cyber law advisory (IT Act 2000)</li>
+              <li>Data protection compliance</li>
+              <li>IS security and control audits</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Highlight / CTA -->
+      <div class="highlight-box reveal">
+        <span class="section-label">Let's Work Together</span>
+        <h2>Not Sure Which Service You Need?</h2>
+        <p>Speak directly with one of our partners for a confidential, no-obligation consultation. We'll identify the right solutions for your specific situation.</p>
+        <div class="highlight-box-actions">
+          <a href="contact.html"        class="btn btn-primary btn-lg">Schedule a Consultation</a>
+          <a href="tel:+918088099478"   class="btn btn-navy btn-lg">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+            Call Us Now
+          </a>
+          <a href="https://wa.me/918088099478" class="btn btn-whatsapp btn-lg" target="_blank" rel="noopener">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            WhatsApp Us
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- ── FOOTER ─────────────────────────────────────────── -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <div class="footer-logo-badge"><img src="favicon.jpeg" alt="PS&A"></div>
+            <div>
+              <span class="footer-logo-name">P Sreenivasulu and Associates</span>
+              <span class="footer-logo-sub">Chartered Accountants</span>
+            </div>
+          </div>
+          <p class="footer-tagline">Delivering precision, integrity, and trusted financial counsel to businesses and individuals since 2004.</p>
+          <ul class="footer-contact-list">
+            <li class="footer-contact-item">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+              <a href="tel:+918088099478">+91-8088099478</a>
+            </li>
+            <li class="footer-contact-item">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              <a href="mailto:krishna@psaca.co">krishna@psaca.co</a>
+            </li>
+            <li class="footer-contact-item">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              Mon–Sat: 10 AM – 7 PM
+            </li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Services</h5>
+          <ul class="footer-links">
+            <li><a href="#audit-assurance"      class="footer-link">Audit &amp; Assurance</a></li>
+            <li><a href="#taxation-services"     class="footer-link">Taxation Services</a></li>
+            <li><a href="#corporate-secretarial" class="footer-link">Corporate &amp; Secretarial</a></li>
+            <li><a href="#business-consultancy"  class="footer-link">Business Consultancy</a></li>
+            <li><a href="#investment-advisory"   class="footer-link">Investment Advisory</a></li>
+            <li><a href="#specialized-services"  class="footer-link">Specialised Services</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Company</h5>
+          <ul class="footer-links">
+            <li><a href="index.html"   class="footer-link">Home</a></li>
+            <li><a href="about.html"   class="footer-link">About &amp; Partners</a></li>
+            <li><a href="careers.html" class="footer-link">Careers</a></li>
+            <li><a href="contact.html" class="footer-link">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Office Hours</h5>
+          <ul class="footer-links">
+            <li><span class="footer-link" style="cursor:default;">Monday – Saturday</span></li>
+            <li><span class="footer-link" style="cursor:default;color:var(--gold-light);">10:00 AM – 7:00 PM</span></li>
+            <li style="margin-top:16px;"><span class="footer-link" style="cursor:default;">Bengaluru, Karnataka</span></li>
+            <li><a href="https://maps.google.com/?q=Bengaluru+Karnataka" class="footer-link" target="_blank" rel="noopener">View on Map &rarr;</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="footer-copy">&copy; 2025 P Sreenivasulu and Associates. All rights reserved.</p>
+        <div class="footer-legal"><a href="#">Privacy Policy</a><a href="#">Terms of Use</a></div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const header = document.getElementById('siteHeader');
+    window.addEventListener('scroll', () => header.classList.toggle('scrolled', window.scrollY > 20));
+    const hamburger = document.getElementById('hamburger');
+    const mobileNav = document.getElementById('mobileNav');
+    const navOverlay = document.getElementById('navOverlay');
+    function toggleNav(open) {
+      hamburger.classList.toggle('open', open);
+      mobileNav.classList.toggle('open', open);
+      navOverlay.classList.toggle('open', open);
+      hamburger.setAttribute('aria-expanded', open);
+      document.body.style.overflow = open ? 'hidden' : '';
+    }
+    hamburger.addEventListener('click', () => toggleNav(!mobileNav.classList.contains('open')));
+    navOverlay.addEventListener('click', () => toggleNav(false));
+    mobileNav.querySelectorAll('a').forEach(a => a.addEventListener('click', () => toggleNav(false)));
+    const revealObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => { if (entry.isIntersecting) { entry.target.classList.add('visible'); revealObserver.unobserve(entry.target); } });
+    }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+    document.querySelectorAll('.reveal, .reveal-stagger').forEach(el => revealObserver.observe(el));
+  </script>
 </body>
 </html>

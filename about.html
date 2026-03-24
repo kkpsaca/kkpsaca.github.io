@@ -1,187 +1,317 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us - P Sreenivasulu and Associates</title>
-    <meta name="description" content="Learn about P Sreenivasulu and Associates - experienced chartered accountants in Bangalore. Meet our team and discover our mission, vision, and values.">
-    <meta name="keywords" content="about us, chartered accountant team, P Sreenivasulu, Krishna Kanth, Bangalore CA firm, company history">
-
-    <!-- Favicon -->
-    <link rel="icon" type="image/svg+xml" href="favicon.svg">
-    <link rel="icon" type="image/png" sizes="48x48" href="favicon-48.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-    <link rel="shortcut icon" type="image/jpeg" href="favicon.jpeg">
-    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-    <meta name="msapplication-TileImage" content="favicon-256.png">
-
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About &amp; Partners — P Sreenivasulu and Associates, Chartered Accountants</title>
+  <meta name="description" content="Meet the partners of P Sreenivasulu and Associates — CA P. Sreenivasulu (FCA, ACS, DISA) and CA P. Krishna Kanth (B.E. NIT-K, ACA, CISA).">
+  <link rel="icon" href="favicon.jpeg" type="image/jpeg">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <div class="container">
-            <div class="header-content">
-                <div class="logo">
-                    <img src="favicon.jpeg" alt="PSA Logo" class="logo-icon">
-                    <div class="logo-text">
-                        P Sreenivasulu and Associates
-                        <div class="logo-subtitle">Chartered Accountants</div>
-                    </div>
-                </div>
-                <nav>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="services.html">Services</a></li>
-                        <li><a href="about.html" class="active">About</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                        <li><a href="careers.html">Careers</a></li>
-                    </ul>
-                    <button class="mobile-menu-toggle">☰</button>
-                </nav>
-            </div>
+
+  <!-- ── HEADER ─────────────────────────────────────────── -->
+  <header class="site-header" id="siteHeader">
+    <div class="header-inner">
+      <a href="index.html" class="site-logo">
+        <div class="logo-badge"><img src="favicon.jpeg" alt="PS&A Logo"></div>
+        <div class="logo-text">
+          <span class="logo-name">PS &amp; Associates</span>
+          <span class="logo-sub">Chartered Accountants</span>
         </div>
-    </header>
+      </a>
+      <nav class="site-nav" aria-label="Primary">
+        <ul class="nav-links">
+          <li><a href="index.html"    class="nav-link">Home</a></li>
+          <li><a href="about.html"    class="nav-link active">About</a></li>
+          <li><a href="services.html" class="nav-link">Services</a></li>
+          <li><a href="careers.html"  class="nav-link">Careers</a></li>
+          <li><a href="contact.html"  class="nav-link">Contact</a></li>
+        </ul>
+        <a href="contact.html" class="nav-cta">Get in Touch</a>
+      </nav>
+      <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+  <div class="mobile-nav-overlay" id="navOverlay"></div>
+  <nav class="mobile-nav" id="mobileNav" aria-label="Mobile">
+    <a href="index.html"    class="mobile-nav-link">Home</a>
+    <a href="about.html"    class="mobile-nav-link active">About</a>
+    <a href="services.html" class="mobile-nav-link">Services</a>
+    <a href="careers.html"  class="mobile-nav-link">Careers</a>
+    <a href="contact.html"  class="mobile-nav-link">Contact</a>
+    <a href="contact.html"  class="mobile-nav-cta">Get in Touch</a>
+  </nav>
 
-    <main>
-        <div class="container">
+  <!-- ── PAGE BANNER ───────────────────────────────────── -->
+  <section class="page-banner">
+    <div class="container">
+      <nav class="banner-breadcrumb" aria-label="Breadcrumb">
+        <a href="index.html">Home</a>
+        <span>/</span>
+        <span style="color:rgba(250,248,242,0.7);">About</span>
+      </nav>
+      <h1>Our <em>Partners</em></h1>
+      <p class="banner-sub">Two decades of combined expertise — bringing together rare qualifications, diverse industry experience, and a shared commitment to excellence.</p>
+    </div>
+  </section>
 
+  <!-- ── FIRM OVERVIEW ─────────────────────────────────── -->
+  <section class="section" style="background: var(--cream-card);">
+    <div class="container">
+      <div class="text-center reveal" style="max-width:720px; margin:0 auto 52px;">
+        <span class="section-label">About the Firm</span>
+        <hr class="gold-rule center">
+        <h2 class="section-title">Two Decades of <em>Trusted</em> Practice</h2>
+        <p class="section-desc">Established in 2004, P Sreenivasulu and Associates has built a reputation for technical excellence, professional integrity, and client-first service. Our firm holds empanelments with ICAI, RBI, C&amp;AG, and the Karnataka State Cooperative Audit Department — a testament to the trust institutions place in our competence.</p>
+      </div>
+    </div>
+  </section>
 
-            <section class="section">
-                <h2>Our Partners</h2>
-                <p>Meet the founding partners who lead P Sreenivasulu and Associates with decades of combined expertise, professional qualifications, and unwavering commitment to client excellence.</p>
+  <!-- ── PARTNER PROFILES ───────────────────────────────── -->
+  <section class="section" style="background: var(--cream); padding-top: 0;">
+    <div class="container">
 
-                <div class="partners-section">
-                    <div class="partner-profile">
-                        <div class="partner-image">
-                            <img src="partners/sreenivasulu.jpeg" alt="CA P. Sreenivasulu - Founder Partner" loading="lazy">
-                        </div>
-                        <div class="partner-info">
-                            <div class="partner-header">
-                                <h3>CA P. Sreenivasulu</h3>
-                                <div class="partner-credentials">
-                                    <span class="credential">B.Com</span>
-                                    <span class="credential">FCA</span>
-                                    <span class="credential">ACS</span>
-                                    <span class="credential">DISA (ICAI)</span>
-                                </div>
-                                <p class="partner-title">Founder Partner, P. Sreenivasulu & Associates</p>
-                            </div>
-                            <div class="partner-content">
-                                <p><strong>CA P. Sreenivasulu</strong>, the founding partner of the firm, is a seasoned professional with <strong>over two decades of experience</strong> in the field of accounting, taxation, and assurance services. A <strong>Fellow Member of ICAI and Associate Member of ICSI</strong>, he also holds a <strong>Diploma in Information System Audit (DISA)</strong>, equipping him with strong expertise in both financial and technology-driven audits.</p>
-
-                                <p>He has extensive experience in <strong>Income Tax advisory, Statutory, Internal and Concurrent Audits, and Information System Audits</strong>. His practice also covers secretarial and compliance matters for private and public companies, trusts, firms, and societies, making him a trusted advisor for diverse organizations. With his deep technical knowledge and commitment to client service, CA P. Sreenivasulu continues to guide the firm with vision and professional integrity.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="partner-profile">
-                        <div class="partner-image">
-                            <img src="partners/krisha-kanth.jpeg" alt="CA P. Krishna Kanth - Partner" loading="lazy">
-                        </div>
-                        <div class="partner-info">
-                            <div class="partner-header">
-                                <h3>CA P. Krishna Kanth</h3>
-                                <div class="partner-credentials">
-                                    <span class="credential">B.E. (NIT-K)</span>
-                                    <span class="credential">ACA</span>
-                                    <span class="credential">CISA</span>
-                                </div>
-                                <p class="partner-title">Partner, P. Sreenivasulu & Associates</p>
-                            </div>
-                            <div class="partner-content">
-                                <p><strong>CA P. Krishna Kanth</strong> brings a unique combination of <strong>engineering and chartered accountancy expertise</strong> to the firm. A graduate from <strong>NIT Karnataka and an Associate Member of ICAI</strong>, he is also a <strong>Certified Information Systems Auditor (CISA)</strong>, with specialized skills in technology-driven assurance and compliance services.</p>
-
-                                <p>His areas of specialization include <strong>Direct & Indirect Taxation, Information System Audits, Cyber Laws, Forensic Audits, and Statutory Audits</strong> of both private and public limited companies. He has also advised extensively on ROC matters of LLPs and companies, and is recognized for his capabilities in <strong>system analysis and the design of customized ERPs and accounting applications</strong> tailored to client needs.</p>
-
-                                <p>With a strong foundation in both technology and finance, CA Krishna Kanth plays a key role in helping clients bridge the gap between <strong>compliance, governance, and digital transformation</strong>.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section class="section">
-                <h2>Why Choose Us</h2>
-                <div class="services-grid">
-                    <div class="service-card">
-                        <div class="icon">👨‍💼</div>
-                        <h3>Experienced Professionals</h3>
-                        <p>Our team of qualified chartered accountants and financial experts brings years of industry experience to every client engagement, ensuring high-quality service delivery.</p>
-                    </div>
-                    <div class="service-card">
-                        <div class="icon">🎯</div>
-                        <h3>Personalized Service</h3>
-                        <p>We understand that every client is unique. Our approach is tailored to meet your specific business needs and financial objectives.</p>
-                    </div>
-                    <div class="service-card">
-                        <div class="icon">⏰</div>
-                        <h3>Timely Delivery</h3>
-                        <p>We value your time and ensure all services are delivered promptly with accuracy and attention to detail, meeting all deadlines consistently.</p>
-                    </div>
-                    <div class="service-card">
-                        <div class="icon">💰</div>
-                        <h3>Competitive Pricing</h3>
-                        <p>Our services are competitively priced with transparent billing and no hidden costs, providing excellent value for your investment.</p>
-                    </div>
-                    <div class="service-card">
-                        <div class="icon">🔒</div>
-                        <h3>Confidentiality & Ethics</h3>
-                        <p>We maintain the highest standards of confidentiality and professional ethics in all our client relationships and business dealings.</p>
-                    </div>
-                    <div class="service-card">
-                        <div class="icon">📚</div>
-                        <h3>Continuous Learning</h3>
-                        <p>We stay updated with the latest regulations, technologies, and best practices to provide you with current and relevant advice.</p>
-                    </div>
-                </div>
-            </section>
-
-
+      <!-- Partner 1: CA P. Sreenivasulu -->
+      <div class="partner-card reveal" id="partner-sreenivasulu">
+        <div class="partner-photo-wrap">
+          <img src="partners/sreenivasulu.jpeg" alt="CA P. Sreenivasulu" class="partner-photo">
+          <div class="partner-credentials">
+            <span class="qual-badge">B.Com</span>
+            <span class="qual-badge">FCA</span>
+            <span class="qual-badge">ACS</span>
+            <span class="qual-badge">DISA(ICAI)</span>
+          </div>
         </div>
-    </main>
-
-    <footer>
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h3>P Sreenivasulu and Associates</h3>
-                    <p>Professional Chartered Accountant services in Bangalore. Your trusted financial partner for comprehensive accounting and business advisory solutions.</p>
-                </div>
-                <div class="footer-section">
-                    <h3>Quick Links</h3>
-                    <p><a href="index.html">Home</a></p>
-                    <p><a href="services.html">Services</a></p>
-                    <p><a href="about.html">About Us</a></p>
-                    <p><a href="contact.html">Contact</a></p>
-                    <p><a href="careers.html">Careers</a></p>
-                </div>
-                <div class="footer-section">
-                    <h3>Services</h3>
-                    <p><a href="services.html#tax-planning">Tax Planning</a></p>
-                    <p><a href="services.html#audit-assurance">Audit & Assurance</a></p>
-                    <p><a href="services.html#accounting-services">Accounting</a></p>
-                    <p><a href="services.html#business-consulting">Business Consulting</a></p>
-                </div>
-                <div class="footer-section">
-                    <h3>Contact Info</h3>
-                    <p>📍 Bangalore, Karnataka, India</p>
-                    <p>📞 +91-8088099478</p>
-                    <p>✉️ krishna@psaca.co</p>
-                    <p>🕒 Mon-Sat: 10:00 AM - 7:00 PM</p>
-                </div>
+        <div class="partner-bio">
+          <h3>CA P. Sreenivasulu</h3>
+          <span class="partner-title">Founder Partner &middot; Established 2004</span>
+          <hr class="gold-rule">
+          <p class="partner-desc">CA P. Sreenivasulu is the Founder Partner of the firm, bringing over two decades of rich experience in Chartered Accountancy practice. His academic background combines a Bachelor of Commerce with the prestigious Fellow Membership of ICAI (FCA) — the highest grade of ICAI membership awarded to practitioners of sustained excellence.</p>
+          <p class="partner-desc">What truly distinguishes him is his rare dual qualification as both a Fellow Chartered Accountant (FCA) and an Associate Company Secretary (ACS) — enabling the firm to offer integrated financial and corporate law services under one roof. His DISA certification from ICAI further enables him to lead information systems audit engagements with specialist competence.</p>
+          <p class="partner-desc">His practice spans statutory and internal audits, income tax planning and compliance, and comprehensive secretarial and compliance advisory for companies of all sizes. He is the trusted advisor to a diverse client base ranging from emerging startups to established enterprises across Karnataka.</p>
+          <div class="partner-expertise">
+            <span class="partner-expertise-label">Areas of Expertise</span>
+            <div class="expertise-tags">
+              <span class="expertise-tag">Income Tax</span>
+              <span class="expertise-tag">Statutory Audits</span>
+              <span class="expertise-tag">Internal Audits</span>
+              <span class="expertise-tag">Concurrent Audits</span>
+              <span class="expertise-tag">IS Audits (DISA)</span>
+              <span class="expertise-tag">Secretarial Matters</span>
+              <span class="expertise-tag">Corporate Compliance</span>
+              <span class="expertise-tag">Company Law</span>
             </div>
-            <div class="footer-bottom">
-                <p>&copy; 2024 P Sreenivasulu and Associates. All rights reserved.</p>
-            </div>
+          </div>
         </div>
-    </footer>
+      </div>
 
-    <script>
-        // Mobile menu toggle
-        document.querySelector('.mobile-menu-toggle').addEventListener('click', function() {
-            document.querySelector('nav ul').classList.toggle('active');
-        });
-    </script>
+      <!-- Partner 2: CA P. Krishna Kanth -->
+      <div class="partner-card reveal" id="partner-krishna-kanth">
+        <div class="partner-photo-wrap">
+          <img src="partners/krisha-kanth.jpeg" alt="CA P. Krishna Kanth" class="partner-photo">
+          <div class="partner-credentials">
+            <span class="qual-badge">B.E.(NIT-K)</span>
+            <span class="qual-badge">ACA</span>
+            <span class="qual-badge">CISA</span>
+          </div>
+        </div>
+        <div class="partner-bio">
+          <h3>CA P. Krishna Kanth</h3>
+          <span class="partner-title">Partner &middot; Technology &amp; Taxation Specialist</span>
+          <hr class="gold-rule">
+          <p class="partner-desc">CA P. Krishna Kanth is a partner who brings a truly distinctive profile to the firm — a graduate of the National Institute of Technology Karnataka (NIT-K, Surathkal), one of India's premier engineering institutions, who later qualified as a Chartered Accountant. This rare combination of engineering rigour and financial expertise creates a professional uniquely equipped for today's technology-driven business environment.</p>
+          <p class="partner-desc">His Certified Information Systems Auditor (CISA) certification — a globally recognised credential — enables him to conduct IS audits and forensic engagements at the highest level. He combines this with deep expertise in direct and indirect taxation, cyber law advisory, and ERP system design, making him an invaluable resource for technology companies and businesses undergoing digital transformation.</p>
+          <p class="partner-desc">CA Krishna Kanth's practice is particularly valued by technology companies, manufacturing firms, and businesses that require an advisor who can bridge the worlds of finance, technology, and compliance. His forensic audit capabilities and cyber law expertise are sought by organisations navigating digital risks and investigations.</p>
+          <div class="partner-expertise">
+            <span class="partner-expertise-label">Areas of Expertise</span>
+            <div class="expertise-tags">
+              <span class="expertise-tag">Direct Taxation</span>
+              <span class="expertise-tag">Indirect Taxation</span>
+              <span class="expertise-tag">IS Audits (CISA)</span>
+              <span class="expertise-tag">Forensic Audits</span>
+              <span class="expertise-tag">Statutory Audits</span>
+              <span class="expertise-tag">Cyber Laws</span>
+              <span class="expertise-tag">ERP Design</span>
+              <span class="expertise-tag">IT Advisory</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ── WHY CHOOSE US ──────────────────────────────────── -->
+  <section class="section" style="background: var(--cream-card);">
+    <div class="container">
+      <div class="text-center reveal" style="margin-bottom: 52px;">
+        <span class="section-label">Our Commitment</span>
+        <hr class="gold-rule center">
+        <h2 class="section-title">Why Work With <em>Us</em></h2>
+        <p class="section-desc">Our culture and values set us apart from a typical CA firm — and keep clients returning year after year.</p>
+      </div>
+      <div class="services-grid reveal-stagger">
+
+        <div class="service-card">
+          <div class="service-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg>
+          </div>
+          <h3>Experienced Professionals</h3>
+          <p>Partners with FCA, ACS, DISA, and CISA qualifications plus 20+ years of combined experience across diverse industries and client types.</p>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>
+          </div>
+          <h3>Personalised Service</h3>
+          <p>Direct access to partner-level expertise on every engagement. You speak to decision-makers — not junior staff passing on messages.</p>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          </div>
+          <h3>Timely Delivery</h3>
+          <p>We build filing calendars around your business, track every regulatory deadline, and ensure you are never caught off-guard.</p>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg>
+          </div>
+          <h3>Competitive Pricing</h3>
+          <p>Premium quality at fair, transparent fees. We offer clear engagement letters with no hidden costs — you always know what you're paying for.</p>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0110 0v4"/></svg>
+          </div>
+          <h3>Confidentiality &amp; Ethics</h3>
+          <p>Strict professional confidentiality is non-negotiable. We adhere to ICAI's Code of Ethics and handle every client matter with complete discretion.</p>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M2 3h6a4 4 0 014 4v14a3 3 0 00-3-3H2z"/><path d="M22 3h-6a4 4 0 00-4 4v14a3 3 0 013-3h7z"/></svg>
+          </div>
+          <h3>Continuous Learning</h3>
+          <p>Our team invests in continuous professional development — staying current with regulatory changes, new standards, and emerging best practices.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── CTA ───────────────────────────────────────────── -->
+  <section class="contact-strip">
+    <div class="container">
+      <div class="contact-strip-inner">
+        <div class="reveal">
+          <h2>Connect With Our <em style="color:var(--gold-light);font-style:italic;">Partners</em></h2>
+          <p>Schedule a confidential consultation with CA Sreenivasulu or CA Krishna Kanth directly.</p>
+        </div>
+        <div class="contact-strip-actions reveal">
+          <a href="contact.html"          class="btn btn-primary">Contact Us</a>
+          <a href="tel:+918088099478"     class="btn btn-outline">+91-8088099478</a>
+          <a href="https://wa.me/918088099478" class="btn btn-whatsapp" target="_blank" rel="noopener">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            WhatsApp
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── FOOTER ─────────────────────────────────────────── -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <div class="footer-logo-badge"><img src="favicon.jpeg" alt="PS&A"></div>
+            <div>
+              <span class="footer-logo-name">P Sreenivasulu and Associates</span>
+              <span class="footer-logo-sub">Chartered Accountants</span>
+            </div>
+          </div>
+          <p class="footer-tagline">Delivering precision, integrity, and trusted financial counsel to businesses and individuals since 2004.</p>
+          <ul class="footer-contact-list">
+            <li class="footer-contact-item">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+              <a href="tel:+918088099478">+91-8088099478</a>
+            </li>
+            <li class="footer-contact-item">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              <a href="mailto:krishna@psaca.co">krishna@psaca.co</a>
+            </li>
+            <li class="footer-contact-item">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              Mon–Sat: 10 AM – 7 PM
+            </li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Services</h5>
+          <ul class="footer-links">
+            <li><a href="services.html#audit-assurance"      class="footer-link">Audit &amp; Assurance</a></li>
+            <li><a href="services.html#taxation-services"     class="footer-link">Taxation Services</a></li>
+            <li><a href="services.html#corporate-secretarial" class="footer-link">Corporate &amp; Secretarial</a></li>
+            <li><a href="services.html#business-consultancy"  class="footer-link">Business Consultancy</a></li>
+            <li><a href="services.html#investment-advisory"   class="footer-link">Investment Advisory</a></li>
+            <li><a href="services.html#specialized-services"  class="footer-link">Specialised Services</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Company</h5>
+          <ul class="footer-links">
+            <li><a href="index.html"   class="footer-link">Home</a></li>
+            <li><a href="about.html"   class="footer-link">About &amp; Partners</a></li>
+            <li><a href="careers.html" class="footer-link">Careers</a></li>
+            <li><a href="contact.html" class="footer-link">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Office Hours</h5>
+          <ul class="footer-links">
+            <li><span class="footer-link" style="cursor:default;">Monday – Saturday</span></li>
+            <li><span class="footer-link" style="cursor:default;color:var(--gold-light);">10:00 AM – 7:00 PM</span></li>
+            <li style="margin-top:16px;"><span class="footer-link" style="cursor:default;">Bengaluru, Karnataka</span></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="footer-copy">&copy; 2025 P Sreenivasulu and Associates. All rights reserved.</p>
+        <div class="footer-legal"><a href="#">Privacy Policy</a><a href="#">Terms of Use</a></div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const header = document.getElementById('siteHeader');
+    window.addEventListener('scroll', () => header.classList.toggle('scrolled', window.scrollY > 20));
+    const hamburger = document.getElementById('hamburger');
+    const mobileNav = document.getElementById('mobileNav');
+    const navOverlay = document.getElementById('navOverlay');
+    function toggleNav(open) {
+      hamburger.classList.toggle('open', open);
+      mobileNav.classList.toggle('open', open);
+      navOverlay.classList.toggle('open', open);
+      hamburger.setAttribute('aria-expanded', open);
+      document.body.style.overflow = open ? 'hidden' : '';
+    }
+    hamburger.addEventListener('click', () => toggleNav(!mobileNav.classList.contains('open')));
+    navOverlay.addEventListener('click', () => toggleNav(false));
+    mobileNav.querySelectorAll('a').forEach(a => a.addEventListener('click', () => toggleNav(false)));
+    const revealObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => { if (entry.isIntersecting) { entry.target.classList.add('visible'); revealObserver.unobserve(entry.target); } });
+    }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+    document.querySelectorAll('.reveal, .reveal-stagger').forEach(el => revealObserver.observe(el));
+  </script>
 </body>
 </html>
